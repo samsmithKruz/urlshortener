@@ -9,7 +9,7 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
     $route = $db->single();
     if ($route) {
         $route = $route->link;
-        header("location: $route");
+        header("location: https://$route");
         exit();
     } else {
         $err = "Unkown link";
@@ -48,22 +48,20 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
     <section id="form">
         <form action="">
             <div class="input">
-                <label for="urls">https</label>
+                <label for="urls">https://</label>
                 <input type="text" id="urls" name="urls" placeholder="wwww.example.com">
                 <input type="submit" value="Go">
             </div>
             <div class="result hide">
                 <h5>Result</h5>
-                <div class="link">
-                    <span>https://tiny.url/98SDF</span>
-                    <a href="./" class="copy">copy</a>
-                </div>
             </div>
         </form>
     </section>
     <footer>
         <small>Created by</small>
-        <img src="./logo.svg" alt="">
+        <a href="https://twitter.com/samsmith_kruz">
+            <img src="./logo.svg" alt="">
+        </a>
     </footer>
 </body>
 

@@ -78,12 +78,15 @@ form .input > input[type="submit"] {
   color: #fff;
   padding: 1rem 2rem;
 }
+form .input > input[type="text"] {
+  padding-left: 0;
+}
 
 form .input > label {
   opacity: 0.85;
   align-self: center;
-  border-right: 1px solid #27253674;
-  padding: 0 1rem;
+  /* border-right: 1px solid #27253674; */
+  padding: 0 .1rem 0 1rem;
 }
 form .result {
   background-color: #fff;
