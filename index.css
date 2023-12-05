@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --black: #272536;
+  --blue: #005eff;
+}
+.hide{
+    display: none !important;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: all ease 0.2s;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+section {
+  padding: 1rem;
+}
+section#hero {
+  margin: auto;
+  max-width: 1020px;
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+section#hero img {
+  max-width: 300px;
+}
+section#hero p {
+  max-width: 40ch;
+  opacity: 0.85;
+  margin: auto;
+}
+section#hero h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+section#form {
+  background-color: #f8f8f8;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+form .input {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 3px 9px -8px #83838674;
+  gap: 0.5rem;
+}
+form .input > * {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  font-family: inherit;
+}
+
+form .input > input[type="submit"] {
+  background-color: var(--blue);
+  cursor: pointer;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+form .input > label {
+  opacity: 0.85;
+  align-self: center;
+  border-right: 1px solid #27253674;
+  padding: 0 1rem;
+}
+form .result {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 9px -8px #83838674;
+}
+.link {
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--blue);
+  /* padding: .5rem; */
+}
+.link span {
+  padding: 0.5rem;
+}
+.link a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--blue);
+  padding: 0.5rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  section#hero h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+    form .input > input[type="text"] {
+        width: 100px;
+      }
+}
